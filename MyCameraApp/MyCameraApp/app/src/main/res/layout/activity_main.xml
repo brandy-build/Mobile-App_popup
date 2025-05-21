@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- TextView to display roll numbers in top-right corner -->
+    <TextView
+        android:id="@+id/rollNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22BTCS145\n22BTCS146\n22BTCS147\n22BTCS148"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textAlignment="viewEnd"
+        android:gravity="end"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:padding="8dp"
+        android:maxLines="4" />
+
+    <!-- Button centered on screen -->
+    <Button
+        android:id="@+id/btnRequestPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Camera Permission"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
